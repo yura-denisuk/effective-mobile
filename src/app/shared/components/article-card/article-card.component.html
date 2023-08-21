@@ -1,0 +1,11 @@
+<div class="articles-card" *ngIf="article">
+  <div class="articles-header">
+    {{article.title | title}}
+  </div>
+  <div class="articles-description">
+    {{article.body | description}}
+  </div>
+  <div class="articles-footer">
+    <a [routerLink]="'/articles/' + article.id">Читать дальше</a>
+  </div>
+</div>

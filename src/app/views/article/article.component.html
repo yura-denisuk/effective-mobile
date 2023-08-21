@@ -1,0 +1,15 @@
+<section class="detail" *ngIf="currentArticle">
+  <div class="container">
+    <div class="detail-head">
+      <div class="detail-head-text">
+        <div class="detail-head-title">
+          Вы читаете статью: <span>{{currentArticle.title}}</span>
+        </div>
+        <div class="detail-head-annotation">
+          {{currentArticle.body}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

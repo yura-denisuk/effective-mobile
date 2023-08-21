@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/_variables.scss";
+@import "../../../../assets/styles/_mixins.scss";
+
+.articles-card {
+  position: relative;
+  max-width: 291px;
+  margin-bottom: 40px;
+
+  .articles-header {
+    @include card-title;
+    margin-bottom: 20px;
+    height: 78px;
+  }
+
+  .articles-description {
+    @include card-description;
+    height: 126px;
+    margin-bottom: 20px;
+  }
+
+  .articles-footer {
+    cursor: pointer;
+    a {
+      @include card-title;
+      font-size: 16px;
+      text-decoration: none;
+      border-bottom: 1px solid $title-color;
+    }
+
+  }
+}
